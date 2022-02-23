@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="Your description goes here" />
+    <meta name="keywords" content="one, two, three" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Fabric Sampler</title>
+
+    <!-- external CSS link -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Google Fonts links-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <h1>Fabric Sampler Demo</h1>
+    <p>Choose one fabric and change the pattern size.</p>
+    <label for="pattern-size">Pattern Size</label>
+    <input
+      type="range"
+      id="pattern-size"
+      name="pattern-size"
+      max="1.5"
+      min=".4"
+      step=".1"
+      value="1"
+    />
+    <section class="fabrics-container">
+      <img
+        class="sample"
+        src="img/sample-1.png"
+        alt="fabric sample 1"
+        onclick="changeBackground('sample-1')"
+      />
+      <img
+        class="sample"
+        src="img/sample-2.png"
+        alt="fabric sample 2"
+        onclick="changeBackground('sample-2')"
+      />
+      <img
+        class="sample"
+        src="img/sample-3.png"
+        alt="fabric sample 3"
+        onclick="changeBackground('sample-3')"
+      />
+      <img
+        class="sample"
+        src="img/sample-4.png"
+        alt="fabric sample 4"
+        onclick="changeBackground('sample-4')"
+      />
+      <img
+        class="sample"
+        src="img/sample-5.png"
+        alt="fabric sample 5"
+        onclick="changeBackground('sample-5')"
+      />
+      <img
+        class="sample"
+        src="img/sample-6.png"
+        alt="fabric sample 6"
+        onclick="changeBackground('sample-6')"
+      />
+    </section>
+    <div id="suit">
+      <img src="img/suit-2.png" alt="Female suit sketch" />
+    </div>
+
+    <script type="text/javascript" src="js/main.js"></script>
+  </body>
+</html>
